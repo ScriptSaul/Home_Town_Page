@@ -1,0 +1,148 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+BLAZE ORANGE: #F75C03
+EMERALD: #00CC66
+BRIGHT AMBER: #F1C40F
+
+*/
+
+/* Reset margins for a clean canvas */
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradient {
+    background-image: linear-gradient(
+        to bottom, 
+        #00CC66 0%, 
+        #00CC66 40%, 
+        #F1C40F 100%
+     );
+
+    padding: 20px 0px;
+    min-height: calc(100vh - 40vh);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+
+
+.hero-banner {
+    /* Dark tint overlay combined with the background image */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+    background:  url("images/the-grove.webp") no-repeat center center;
+    background-size: cover; /* Ensures image fills the entire section */
+    
+    min-height: 40vh; /* Scales to full viewport height */
+    width: 100%;
+    
+    /* Flexbox automatically centers the inner content */
+    
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the top of the section */
+}
+
+.hero-title h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #F75C03;
+    text-shadow: black 2px 2px 2px;   
+}
+
+.hero-title h2 {
+    font-size: 15px;
+    margin-bottom: 330px;
+    font-weight: 700;
+    text-align: center;
+    color: #F75C03;
+    text-shadow: black 2px 2px 2px;    
+}
+
+#act-title {
+    color: #F75C03;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: black 1px 1px 3px;
+    padding-top: 20px;
+}
+
+.options {
+    display: grid; /* Aligns all items tightly in the middle */
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    justify-content: center; 
+    gap: 60px;
+    position: relative;  
+}
+
+#theatre:hover, #farm-market:hover, #biking:hover {
+    transform: scale(1.05);
+}
+
+
+#left-orange {
+    transform: scaleX(-1);
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+
+}
+
+
+#theatre-text {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-weight: bold;
+}
+
+#farm-market-text {
+    grid-row: 2 / 3;
+    grid-column: 2 / 5;
+    font-weight: bold;
+}
+
+#bike-trail-text {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    font-weight: bold;
+}
+
+#right-orange {
+    grid-row: 1 / 1;
+    grid-column: 5 / 5; 
+}
+
+
+
+#profile-pic:hover {
+    transform: scale(1.05);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.guide {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    font-weight: 500;
+}
