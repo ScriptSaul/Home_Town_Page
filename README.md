@@ -1,19 +1,36 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# 🌴 Welcome to Winter Garden
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+A responsive hometown guide website showcasing some of the attractions, activities, and local experiences available in Winter Garden, Florida.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could go further with one of our advanced courses 🚀
+This project was created as a front-end web development exercise using HTML and CSS. The page features a hero banner with a custom background image, an activities section highlighting local attractions, and a personal guide section with a LinkedIn profile link.
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Features
 
-Happy Coding!
+- Responsive hero banner with background imagery
+- CSS linear gradient transitioning from emerald green to bright amber
+- Interactive activity images with hover effects
+- Links to local Winter Garden attractions and resources
+- Personal guide section with a clickable profile image
+- Responsive layout using CSS Grid and Flexbox
+- Custom typography, colors, spacing, and visual styling
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- CSS Grid
+- Flexbox
+- Git & GitHub
+- Netlify for deployment
+
+## Purpose
+
+This project was built to practice fundamental front-end development skills, including structuring a webpage with semantic HTML, creating responsive layouts with CSS, working with images and hyperlinks, and using Git/GitHub to manage and deploy a completed project.
+
+## Live Site
+
+[View the live website](https://winter-garden.netlify.app/)
+
+## Author
+
+Paul James Saulle
