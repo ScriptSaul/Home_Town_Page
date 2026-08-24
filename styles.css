@@ -35,7 +35,7 @@ body {
      );
 
     padding: 20px 0px;
-    min-height: calc(100vh - 40vh);
+    min-height: calc(100vh - 400px);
 }
 
 img {
@@ -52,8 +52,9 @@ img {
     /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
     background:  url("images/the-grove.webp") no-repeat center center;
     background-size: cover; /* Ensures image fills the entire section */
+    background-position: center 20%;
     
-    min-height: 40vh; /* Scales to full viewport height */
+    height: 400px; /* Scales to full viewport height */
     width: 100%;
     
     /* Flexbox automatically centers the inner content */
@@ -99,6 +100,7 @@ img {
 
 #theatre:hover, #farm-market:hover, #biking:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -136,13 +138,33 @@ img {
 
 
 #profile-pic:hover {
-    transform: scale(1.05);
-    border-radius: 50px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
+#profile-pic:hover {
+    transform: scale(1.05);
+}
+
+
 .guide {
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 120px;
     font-weight: 500;
+}
+
+.guide h3 {
+    margin-bottom: 30px;
+}
+
+.guide p {
+    margin: 0 auto 35px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.guide h4 {
+    margin-bottom: 30px;
 }
